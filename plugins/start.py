@@ -94,9 +94,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>ചാനലിൽ നിങ്ങൾ ഉണ്ടെങ്കിൽ മാത്രമേ ഈ ബോട്ട് വഴി നിങ്ങൾക്ക് സിനിമ കിട്ടുകയുള്ളൂ അതുകൊണ്ട് ചാനലിൽ ജോയിൻ ചെയ്യുക എന്നിട്ട് വീണ്ടും ഗ്രൂപ്പിൽ പോയി മൂവിയിൽ ക്ലിക്ക് ചെയ്തു START കൊടുക്കുക.
-
-Only if you are on the channel will you get the movie through this bot so join the channel and go back to the group and click on the movie and START</b>"
+    text = "<b>ചാനലിൽ നിങ്ങൾ ഉണ്ടെങ്കിൽ മാത്രമേ ഈ ബോട്ട് വഴി നിങ്ങൾക്ക് സിനിമ കിട്ടുകയുള്ളൂ അതുകൊണ്ട് ചാനലിൽ ജോയിൻ ചെയ്യുക എന്നിട്ട് വീണ്ടും ഗ്രൂപ്പിൽ പോയി മൂവിയിൽ ക്ലിക്ക് ചെയ്തു START</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
