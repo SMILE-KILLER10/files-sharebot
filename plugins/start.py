@@ -103,7 +103,6 @@ async def not_joined(client: Client, message: Message):
         pass
     reply_markup = InlineKeyboardMarkup([
         [InlineKeyboardButton("🔽JOIN MAIN CHANNEL🔼", url = client.invitelink)],
-        [InlineKeyboardButton("🔁TRY AGAIN🔁", url="https://t.me/{client.username}?start={argument}")],  
         [InlineKeyboardButton("➰SUPPORT GROUP➰", url="https://t.me/NAZRIYAOFFTOPIC")],
    ])
     await message.reply(
